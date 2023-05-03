@@ -1,0 +1,171 @@
+body{ 
+  background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618501280_52-p-fon-rust-55.png); 
+  background-size: cover;
+  margin-left: 30px;
+  margin-top: 30px;
+  color:white;
+}
+.container{/* head container */
+  width: 1170px;
+  height: 100px;
+  border: 0.001px solid red;
+  margin: 0 auto;
+  background-image:url(https://phonoteka.org/uploads/posts/2021-05/1620064568_12-phonoteka_org-p-fon-dlya-shapki-priroda-13.jpg);
+  background-size: cover
+}
+.container_body{ /* body container */
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.container_name{/* body container */
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+ul {
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+li{
+  display:block;
+  padding: 0 20px;
+  color:#fff;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+li a{
+  text-decoration: none;
+  color:#fff;
+  transition: .5s;
+  padding: 10px;
+}
+
+ul:nover li a{
+  filter:blur(10px);
+}
+
+ul:hover li a:hover {
+  font-size: 22px;
+  filter:blur(0px);
+  background-color:#fff;
+  color:grey;
+}
+/* Начало блок сотрудники*/
+.container_contact{
+  margin-top: 10px;
+}
+
+.container_contact h1{
+  text-align: center;
+  color:white;
+}
+
+.block_sotrudnik{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.volupavum {
+  background: #b53030f7;
+  margin: 4px;
+  margin-bottom: 50px;
+  width: 315px;
+  padding: 18px;
+  line-height: 20px;
+  color: #888dad;
+  position: relative;
+  border-radius: 20px;
+}
+
+.volupavum h3{
+  color: black;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+p.role {
+  color: #676363;
+  margin: 10px 0;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.avatar{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.avatar img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
+/* конец Блок сотрудники*/
+
+
+ /*
+Форма обратной связи
+*/
+#inline {
+   margin-left:30px;
+   width:80%;
+   margin:0 auto;
+   background:none;
+   padding:10px 20px;
+}
+.txt {
+   display:inline-block;
+   color:#676767;
+   width:190px;
+   margin-bottom:-15px;
+   border:1px solid #CCC;
+   padding:5px 9px;
+   font-size:15px!important;
+   line-height:1.4em;
+}
+.txtarea {
+   display:inline-block;
+   color:#676767;
+   width:404px;
+   margin-bottom:10px;
+   border:1px solid #CCC;
+   padding:5px 9px;
+   font-size:15px!important;
+   line-height:1.4em;
+   height:80px;
+}
+#send { 
+    color:#FFFFFF;
+    display:block;
+    cursor:pointer;
+    padding:5px 11px;
+    font-size:1.2em;
+    border:solid 1px #F9F9F9;
+    border-radius:2px;
+    background:#ff4e33;
+    width:210px;
+    margin-bottom:20px;
+}
+#send:hover {
+    background:#979797;
+}
+/* Конец формы */
