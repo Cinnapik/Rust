@@ -1,0 +1,111 @@
+body{ 
+ 	background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618501280_52-p-fon-rust-55.png); 
+ 	background-size: cover;
+  margin-left: 30px;
+ 	margin-top: 30px;
+ }
+ a{
+color: black;
+ text-decoration: none;
+}
+a:active{
+  color:white;
+  }
+ span{
+font-family: Arial, Helveticas;
+color: gray;
+font-size: 14px;
+}
+fron{
+  color:darkgray;
+  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
+}
+
+im {
+    border: 3px solid white;
+    float: left;
+    margin: 0 1em 1em 0;
+   }
+
+ij {
+    border: 3px solid white;
+    float: right;
+    margin: 0 1em 1em 0;
+   }
+
+p{
+        overflow: hidden;
+    }
+hr{
+  bottom;
+}
+/*Оформление горизантального меню*/
+ul {
+  display:flex;
+  max-width: 1140px;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+li{
+  display:block;
+  padding: 0 20px;
+  color:#fff;
+  font-size: 18px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  transition: .5s;
+}
+
+li a{
+  text-decoration: none;
+  color:#fff;
+  transition: .5s;
+  padding: 10px;
+}
+
+ul:hover li a{
+  filter:blur(3px);
+}
+
+ul:hover li a:hover {
+  font-size: 22px;
+  filter:blur(0px);
+  background-color:#fff;
+  color:grey;
+}
+ /*Конец оформления */
+ 
+.container{/* head container */
+  max-width: 1170px;
+  height: 100px;
+  border: 0.001px solid red;
+  margin: 0 auto;
+  background-image:url(https://phonoteka.org/uploads/posts/2021-05/1620064568_12-phonoteka_org-p-fon-dlya-shapki-priroda-13.jpg);
+  background-size: cover
+}
+
+.container_body{ /* body container */
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.container_name{/* name container */
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+.container_mail{
+  max-width: 1170px;
+}
+.container_bodys{ /* bodys container */
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 16px;
+    padding-right: 16px;
+}
