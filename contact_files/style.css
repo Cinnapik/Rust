@@ -27,13 +27,13 @@ body{
     padding-left: 16px;
     padding-right: 16px;
 }
-ul {
+.container ul {
   display:flex;
   justify-content: space-between;
   align-items: center;
   margin-top: 35px;
 }
-li{
+.container li{
   display:block;
   padding: 0 20px;
   color:#fff;
@@ -43,18 +43,18 @@ li{
   transition: .5s;
 }
 
-li a{
+.container li a{
   text-decoration: none;
   color:#fff;
   transition: .5s;
   padding: 10px;
 }
 
-ul:nover li a{
+.container ul:nover li a{
   filter:blur(10px);
 }
 
-ul:hover li a:hover {
+.container ul:hover li a:hover {
   font-size: 22px;
   filter:blur(0px);
   background-color:#fff;
@@ -169,3 +169,116 @@ p.role {
     background:#979797;
 }
 /* Конец формы */
+
+
+
+#main-menu {
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: #3D0E61;
+  margin: 0px;  
+  z-index: 9;
+}
+
+#main-menu ul {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+  margin: 0px auto;
+  padding: 0px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  z-index: 9;
+}
+
+#main-menu li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+#main-menu a {
+  color: #B9FAF8;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#main-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input{
+  display: none;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Cabin', Sans-serif;
+    background-image: url(https://luv-life.ru/wp-content/uploads/2022/01/menu.png);
+    background-size: cover;
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 200px;
+    height: 100%;
+    background-color: #3D0E61;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+}
+
+#hamburger-menu h3 {
+  color: #B9FAF8;
+  font-size: 2.2rem;
+}
+
+#hamburger-menu ul {
+  padding-left: 0px;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+}
+
+#hamburger-menu a {
+  color: #B9FAF8;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+
+#hamburger-menu a:hover {
+  text-decoration: underline;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+    visibility: visible;
+    left: 0;
+}
+#hamburger-input:checked ~ .overlay{
+   visibility: visible;
+  opacity: 0.4;
+}
+
+
+@media screen and (max-width: 1040px) {
+  .container {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
+}
