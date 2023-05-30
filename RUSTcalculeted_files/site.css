@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 body{ 
  	background-image: url(https://phonoteka.org/uploads/posts/2021-04/1618501280_52-p-fon-rust-55.png); 
  	background-size: cover;
@@ -47,7 +52,7 @@ hr{
 /*Оформление горизантального меню*/
 .container ul {
   display:flex;
-  max-width: 1140px;
+  max-width: 1200px;
   justify-content: space-between;
   align-items: center;
   margin-top: 35px;
@@ -82,7 +87,7 @@ hr{
  /*Конец оформления */
  
 .container{/* head container */
-  max-width: 1170px;
+  max-width: 1200px;
   height: 100px;
   border: 0.001px solid red;
   margin: 0 auto;
@@ -91,24 +96,25 @@ hr{
 }
 
 .container_body{ /* body container */
-    max-width: 1170px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
+    margin-top: 30px;
 }
 .container_name{/* name container */
-    max-width: 1170px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
 }
 .container_mail{
-  max-width: 1170px;
+  max-width: 1200px;
 }
 .container_bodys{ /* bodys container */
-    max-width: 900px;
+    max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
@@ -176,7 +182,7 @@ hr{
     position: fixed;
     top: 0;
     left: -250px;
-    width: 200px;
+    width: 100%;
     height: 100%;
     background-color: darkred;
     transition: 0.3s;
@@ -321,7 +327,7 @@ footer p {
   display: inline-block;
 }
 
-@media screen and (max-width: 1040px) {
+@media only screen and (max-width: 1040px) {
   .container {
     display: none;
   }
@@ -334,7 +340,7 @@ footer p {
   #phone2{
     display: inline-block;
     position: relative;
-    margin-left:170px;
+    margin-left:100px;
     width: 300px;
     height: 200px;
     float: none;
@@ -361,11 +367,123 @@ footer p {
   #phone2{
     display: inline-table;
     float: none;
-    margin-left: 170px;
   }
 }
 
+@media only screen and (max-width: 480px) {
+  #phone2{
+    margin-left: 0px;
+    width: 100%;
+  }
+  .menu{
+    margin-left: 0px;
+  }
+  .menus{
+    margin-left: 60px;
+  }
+  iframe{
+    width: 255px;
+    height: 235px;
+  }
+  .container_bodys img{
+    width: 100%;
+    height: 100%;
+  }
+  im img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+/*@media screen and (max-width: 1188px){
+  .block_sotrudnik{
+    max-width: 75%;
+    display: block;
+  }
+}*/
+
+.container_contact{
+  margin-top: 10px;
+}
+
+.container_contact h1{
+  text-align: center;
+  color:white;
+}
+
+.block_sotrudnik{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.volupavum {
+  background: #b53030f7;
+  margin: 4px;
+  margin-bottom: 50px;
+  width: 315px;
+  padding: 18px;
+  line-height: 20px;
+  color: #888dad;
+  position: relative;
+  border-radius: 20px;
+}
+
+.volupavum h3{
+  color: black;
+  font-size: 26px;
+  margin-top: 50px;
+}
+
+.volupavum img{
+  width:200px; 
+  height:200px;
+}
+
+p.role {
+  color: #676363;
+  margin: 10px 0;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.avatar{
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.avatar img{
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+}
 
 
+.popupbg{
+  display: none;
+  float: left;
+  z-index: 6;
+  position: fixed;
+  opacity: 75%;
+  height: 102px;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background-color: black;
+}
+.popup{
+  position: relative;
+}
+.popus{
+  float:left;
+}
 
 

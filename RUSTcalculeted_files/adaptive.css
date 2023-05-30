@@ -1,0 +1,19 @@
+@media only screen and (max-width: 480px){
+  .popupbg{
+    display: block;
+    border: 0.2px solid red;
+  }
+  .popupbg img{
+    margin-left: 100px;
+  }
+.bodys{
+  margin-top: 13%;
+}
+#hamburger-menu{
+background-color: white;
+border-radius: 21px;
+}
+body {
+  margin-top: 100px;
+}
+}
