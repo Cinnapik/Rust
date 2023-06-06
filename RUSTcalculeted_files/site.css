@@ -28,7 +28,6 @@ font-size: 14px;
 }
 fron{
   color:darkgray;
-  font-family: Avantgarde, TeX Gyre Adventor, URW Gothic L, sans-serif;
 }
 
 im {
@@ -114,11 +113,14 @@ hr{
   max-width: 1200px;
 }
 .container_bodys{ /* bodys container */
-    max-width: 1200px;
+    max-width: 950px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 16px;
     padding-right: 16px;
+}
+.container_bodys img{
+  border-radius: 50px;
 }
 /*---------------------------------------------*/
 
@@ -430,7 +432,10 @@ footer p {
   position: relative;
   border-radius: 20px;
 }
-
+.volupavum img:hover {
+   border: 1px solid white;
+  transition: 0.5s;
+}
 .volupavum h3{
   color: black;
   font-size: 26px;
@@ -438,6 +443,7 @@ footer p {
 }
 
 .volupavum img{
+  border-radius: 75%;
   width:200px; 
   height:200px;
 }
