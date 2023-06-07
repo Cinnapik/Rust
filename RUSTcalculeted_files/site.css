@@ -432,9 +432,14 @@ footer p {
   position: relative;
   border-radius: 20px;
 }
+.volupavum:hover{
+  background: #df9e9ef7;
+  transition: 3s;
+  color:black;
+}
 .volupavum img:hover {
    border: 1px solid white;
-  transition: 0.5s;
+  transition: 0.6s;
 }
 .volupavum h3{
   color: black;
